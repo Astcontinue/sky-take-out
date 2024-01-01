@@ -1,7 +1,15 @@
 package com.sky.mapper;
 
+import com.github.pagehelper.Page;
+import com.sky.annotation.AutoFill;
+import com.sky.dto.SetmealPageQueryDTO;
+import com.sky.entity.Setmeal;
+import com.sky.enumeration.OperationType;
+import com.sky.vo.SetmealVO;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Service;
 
 @Mapper
 public interface SetmealMapper {
@@ -12,4 +20,39 @@ public interface SetmealMapper {
      */
     @Select("select count(id) from setmeal where category_id = #{categoryId}")
     Integer countByCategoryId(Long id);
+
+    /**
+     * 新增套餐
+     *
+     * @param setmeal
+     */
+    @AutoFill(OperationType.INSERT)
+    void insert(Setmeal setmeal);
+
+    @Select("select * from setmeal where id = #{id}")
+    SetmealVO getById(Long id);
+
+    /**
+     * 分页查询
+     * @param setmealPageQueryDTO
+     * @return
+     */
+    Page<SetmealVO> pageQuery(SetmealPageQueryDTO setmealPageQueryDTO);
+
+    /**
+     * 根据id查询套餐
+     * @param id
+     * @return
+     */
+    @Select("select * from setmeal where id = #{id}")
+    Setmeal getBysId(Long id);
+
+    /**
+     * 根据套餐id删除套餐和菜品的关联关系
+     * @param setmealId
+     */
+    @Delete("delete from setmeal where id = #{id}")
+    void deleteById(Long setmealId);
+
+    void update(Setmeal setmeal);
 }
