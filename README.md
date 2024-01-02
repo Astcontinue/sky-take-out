@@ -1,6 +1,5 @@
 # 苍穹外卖项目介绍
 
-> 苍穹外卖详细教程地址: [黑马程序员最新Java项目实战《苍穹外卖》](https://www.bilibili.com/video/BV1TP411v7v6/)
 
 《苍穹外卖》项目的定位是一款为餐饮企业（餐厅、饭店）定制的软件产品。该项目是一个在线外卖订购系统，顾客可以通过网站或者手机 App 订购餐点。该项目可以提供以下的功能：
 
@@ -29,7 +28,7 @@
 |                                                              |                                                              |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![](images/1.workSpace.png) | ![](images/9.shopStatusManger.png) | ![](images/2.dateView.png) |
-| ![](images/3.orderManger.png) | ![](images/4.stemalManger.png) | ![](images/5.dishManger.png) |
+| ![](images/4.stemalManger.png) | ![](images/5.dishManger.png) |
 | ![](images/6.manger.png) | ![](images/7.addDishOrSteaml.png) | ![](images/8.employeeManger.png) |
 
 
