@@ -8,16 +8,17 @@ sky:
     password: 123456
 
   alioss:
-    endpoint: 
-    access-key-id: 
-    access-key-secret: 
-    bucket-name: 
+    endpoint: https://oss-cn-wuhan-lr.aliyuncs.com
+    access-key-id: LTAI5t8TXr8RpjbBwk6LSsv7
+    access-key-secret: 39UmvSLRkoR3WTotE5SxnooBdo2Vsu
+    bucket-name: sky-take-out-zyy1
 
   redis:
     host: localhost
     port: 6379
     password: 123456
     database: 10
+
     #这里需要配置你的wechatappid和secret
   wechat:
     appid:
