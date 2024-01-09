@@ -63,8 +63,8 @@ public class SetmealServiceImpl implements SetmealService {
 
     @Override
     public Setmeal getById(Long id) {
-        SetmealVO setmealVO = setmealMapper.getById(id);
-        return null;
+        Setmeal setmeal = setmealMapper.getById(id);
+        return setmeal;
     }
 
     /**
